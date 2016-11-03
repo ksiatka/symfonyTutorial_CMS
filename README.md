@@ -1,2 +1,4 @@
-# symfonyTutorial_CMS
-zadanie szkoleniowy Symfony 2 CMS - Redmine: 19715
+cms
+===
+
+A Symfony project created on November 3, 2016, 4:31 pm.

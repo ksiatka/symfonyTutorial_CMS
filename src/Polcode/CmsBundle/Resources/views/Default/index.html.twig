@@ -1,0 +1,11 @@
+{% extends "PolcodeCmsBundle::layout.html.twig" %}
+
+{% block content %}
+    Witaj w panelu administracyjnym!
+    {#
+    {{ knp_menu_render('main', { 'style': 'pills' }) }}
+    {% set menu = knp_menu_get('sidebar', [], {include_homepage: false}) %}
+    {{ knp_menu_render(menu) }}
+    #}
+{% endblock content %}
+

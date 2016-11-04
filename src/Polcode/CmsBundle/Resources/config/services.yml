@@ -1,0 +1,13 @@
+services:
+#    polcode_cms.example:
+#        class: Polcode\CmsBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    app.menu_builder:
+        class: Polcode\CmsBundle\Services\MenuBuilder
+        arguments: ["@knp_menu.factory"]
+        tags:
+            - { name: knp_menu.menu_builder, method: createTopMenu, alias: topMenu } # The alias is what is used to retrieve the menu
+            - { name: knp_menu.menu_builder, method: createSidebarMenu, alias: sidebar } # Named "sidebar" this time
+
+

@@ -1,0 +1,4 @@
+services:
+#    polcode_user.example:
+#        class: Polcode\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

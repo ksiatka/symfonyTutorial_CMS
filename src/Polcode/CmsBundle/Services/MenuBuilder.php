@@ -22,9 +22,9 @@ class MenuBuilder
     {
         $menu = $this->factory->createItem('root');
 
-        $menu->addChild('Home', array('route' => 'homepage'));
-        $menu->addChild('Strona Domowa', array('route' => 'homepage'));
-        $menu->addChild('Start Page', array('route' => 'homepage'));
+        $menu->addChild('Home', array('route' => 'polcode_cms_homepage'));
+        $menu->addChild('Strona Domowa', array('route' => 'polcode_cms_homepage'));
+        $menu->addChild('Start Page', array('route' => 'polcode_cms_homepage'));
 
         return $menu;
     }
@@ -34,7 +34,7 @@ class MenuBuilder
         $menu = $this->factory->createItem('sidebar');
 
         if (isset($options['include_homepage']) && $options['include_homepage']) {
-            $menu->addChild('Home', array('route' => 'homepage'));
+            $menu->addChild('Home', array('route' => 'polcode_cms_homepage'));
         }
 
         // ... add more children

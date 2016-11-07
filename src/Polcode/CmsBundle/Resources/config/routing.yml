@@ -1,3 +1,7 @@
 polcode_cms_homepage:
     path:     /
     defaults: { _controller: PolcodeCmsBundle:Default:index }
+
+polcode_cms_admin_user:
+    resource: "@PolcodeCmsBundle/Resources/config/routing/user.yml"
+    prefix:   /user

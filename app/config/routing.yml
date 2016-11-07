@@ -6,9 +6,5 @@ polcode_cms:
     resource: "@PolcodeCmsBundle/Resources/config/routing.yml"
     prefix:   /admin/
 
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"

@@ -107,6 +107,8 @@ braincrafted_bootstrap:
 ##        bootstrap_output: %kernel.root_dir%/Resources/less/bootstrap.less
 ##        bootstrap_template: BraincraftedBootstrapBundle:Bootstrap:bootstrap.less.twig
  
-
+knp_menu:
+    twig: true
+    
 
 
